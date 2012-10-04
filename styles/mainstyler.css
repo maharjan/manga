@@ -1,0 +1,120 @@
+@CHARSET "UTF-8";
+
+/* General styles */
+html body {
+	margin: 0;
+	padding: 0;
+}
+
+h1,h2,h3,h4 {
+	font-family: Arial, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #000;
+}
+
+h1 {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+h2 {
+	font-size: 14px;
+}
+
+label,input {
+	width: auto;
+}
+
+input {
+	height: auto;
+}
+
+.back_img {
+	background: url("../images/inner_back_glow.png") no-repeat top center;
+}
+
+.back_color {
+	background-color: #308728;
+}
+
+/* Inner container */
+#innerMainContainer {
+	margin: 1em auto 0;
+	margin-bottom: 15px;
+	padding: 1em;
+	width: 80%;
+	background-color: #ccc;
+	border-radius: 5px;
+	-webkit-border-radius: 0px 0px 5px 5px;
+	moz-border-radius: 0px 0px 5px 5px;
+	padding: 1em;
+}
+
+#innerMainContainer label {
+	width: 300px;
+	display: block;
+	padding: 5px 0px;
+}
+
+#innerMainContainer input[type=text],input[type=password] {
+	width: 300px;
+	padding: 5px 10px;
+	margin: 0px 0px 5px;
+	background-color: #bbb;
+	border: 1px solid #aaa;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	moz-border-radius: 3px;
+	-webkit-box-shadow: inset 0px 0px 1px 0px;
+	box-shadow: inset 0px 0px 1px 0px;
+	padding: 5px 10px;
+}
+
+#innerMainContainer input[type=text]:FOCUS,input[type=password]:FOCUS {
+	box-shadow: 0 0 5px #153E7E;
+	border: 1px solid #153E7E;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	moz-border-radius: 3px;
+}
+
+#innerMainContainer textarea {
+	width: 350px;
+	height: 150px;
+	padding: 5px 10px;
+	margin: 0px 0px 5px;
+	background-color: #bbb;
+	border: 1px solid #aaa;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	moz-border-radius: 3px;
+	-webkit-box-shadow: inset 0px 0px 1px 0px;
+	box-shadow: inset 0px 0px 1px 0px;
+	padding: 5px 10px;
+}
+
+#innerMainContainer textarea:FOCUS {
+	box-shadow: 0 0 5px #153E7E;
+	border: 1px solid #153E7E;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	moz-border-radius: 3px;
+}
+
+#innerMainContainer input[type=submit] {
+	color: #e3e3e3;
+	background: #153E7E;
+	margin: 5px 0px 0px;
+	padding: 5px 15px;
+	cursor: pointer;
+	border: 1px solid #1569C7;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	moz-border-radius: 3px;
+	width: auto;
+}
+
+#innerMainContainer input[type=submit]:hover {
+	border: 1px solid #aaa;
+}

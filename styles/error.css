@@ -1,0 +1,42 @@
+@CHARSET "UTF-8";
+
+.back_color {
+	background-color: #308728;
+}
+
+#error_main_container {
+	padding: 5px 0;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 10%;
+	margin-right: 10%;
+	width: 80%;
+	height: 90%;
+}
+
+#error_block {
+	text-align: center;
+}
+
+#error_block img {
+	margin: 10px 0 0 0;
+	padding: 0;
+}
+
+#error_msg {
+	
+}
+
+#error_msg img {
+	margin:0;
+	padding: 0
+}
+
+#error_msg h3 {
+	font: 22px sans-serif, Helvetica;
+	font-weight: bold;
+	margin: 50px 0 20px 0;
+	padding: 20px 0;
+	font: bold 24x sans-serif, Helvetica;
+	text-shadow: 0 0 10px #A0CFEC;
+}
