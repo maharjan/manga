@@ -1,0 +1,10 @@
+/* Create table query */
+create table user (id int(3) PRIMARY KEY NOT NULL UNIQUE AUTO_INCREMENT, username varchar(32) NOT NULL UNIQUE, password varchar(255), created datetime, last_modified datetime, version int(10), status int(1)) ENGINE=InnoDB  DEFAULT CHARSET=latin1;
+/* alter table query */
+alter table user add column (created date, status int);
+
+alter table user modify column (id AUTO_INCREMENT);
+
+create table manga_name (id int(5) AUTO_INCREMENT NOT NULL UNIQUE, created datetime, last_modified datetime, version int(10), status int(1),name varchar(255) NOT NULL, latest_chapter varchar(255) NOT NULL, author varchar(255) NOT NULL, genre varchar(255), PRIMARY KEY (id)) ENGINE=InnoDB  DEFAULT CHARSET=latin1;
+
+create table genre (id int(3) AUTO_INCREMENT NOT NULL UNIQUE PRIMARY KEY, created datetime, last_modified datetime, version int(10), name varchar(255))ENGINE=InnoDB  DEFAULT CHARSET=latin1;

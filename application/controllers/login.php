@@ -13,7 +13,7 @@ class Login extends CI_Controller {
 
 	// 	default function
 	function index() {
-		// $this -> createSuperAdmin();
+		$this -> createSuperAdmin();
 		$this -> load -> view('pages/login_view.php');
 	}
 
@@ -41,5 +41,7 @@ class Login extends CI_Controller {
 			}
 		}
 	}
+	
+	
 
 }

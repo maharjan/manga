@@ -15,6 +15,8 @@ class Main extends CI_Controller {
 	}
 
 	function index() {
+		$this->load->model('main_model');
+		$this->variables['tables']=$this->main_model->fetch_manga_lists();
 		$this -> load -> view('pages/main_view.php',$this->variables);
 	}
 
@@ -28,6 +30,12 @@ class Main extends CI_Controller {
 	
 	function login(){
 		$this -> load -> view('pages/login_view.php');
+	}
+	
+	function logout(){
+		$this->session->unset_userdata('isLoggedIn');
+		$this->session->sess_destroy();
+		redirect('');
 	}
 
 }

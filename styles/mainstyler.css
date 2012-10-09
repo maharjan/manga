@@ -6,7 +6,7 @@ html body {
 	padding: 0;
 }
 
-h1,h2,h3,h4 {
+h1, h2, h3, h4 {
 	font-family: Arial, sans-serif;
 	font-size: 12px;
 	font-weight: normal;
@@ -22,7 +22,7 @@ h2 {
 	font-size: 14px;
 }
 
-label,input {
+label, input {
 	width: auto;
 }
 
@@ -57,7 +57,7 @@ input {
 	padding: 5px 0px;
 }
 
-#innerMainContainer input[type=text],input[type=password] {
+#innerMainContainer input[type=text], input[type=password] {
 	width: 300px;
 	padding: 5px 10px;
 	margin: 0px 0px 5px;
@@ -71,7 +71,7 @@ input {
 	padding: 5px 10px;
 }
 
-#innerMainContainer input[type=text]:FOCUS,input[type=password]:FOCUS {
+#innerMainContainer input[type=text]:FOCUS, input[type=password]:FOCUS {
 	box-shadow: 0 0 5px #153E7E;
 	border: 1px solid #153E7E;
 	border-radius: 3px;
@@ -111,10 +111,33 @@ input {
 	border: 1px solid #1569C7;
 	border-radius: 3px;
 	-webkit-border-radius: 3px;
-	moz-border-radius: 3px;
+	-moz-border-radius: 3px;
 	width: auto;
 }
 
 #innerMainContainer input[type=submit]:hover {
 	border: 1px solid #aaa;
+}
+
+#manga_list {
+	border: 1px solid #999;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+}
+
+#manga_list tr th {
+	border: none;
+	padding: 5px;
+	margin: 0px;
+	background-color: #999;
+	text-align: center;
+	font-weight: bold;
+}
+
+#manga_list tr td {
+	border: none;
+	padding: 2px 5px;
+	margin: 2px 5px;
+	text-align: center;
 }
