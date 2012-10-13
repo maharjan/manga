@@ -19,15 +19,17 @@
 					title="Mail"> </a>
 				</div>
 				<?php echo form_open('login/validate'); ?>
-
-				<div id="login-box-name" style="margin-top: 20px;">
+				<!-- <div class="error">
+					<?php echo validation_errors(); ?>
+				</div> -->
+				<div id="login-box-name">
 					<?php echo form_label("Your email or username ",'username')?>
 				</div>
-				<div id="login-box-field">
+				<div id="login-box-field" style="margin-top: 10px;">
 					<?php
-					$userId = array('name' => 'username', 'id' => 'username', 'class' => 'form-login', 'maxlength' => '32', 'placeholder' => 'example@xyz.com', 'title' => 'Valid email id', 'value' => '');
-					echo form_input($userId);
-					echo form_error('username', '<div class="error">', '</div>');
+                    $userId = array('name' => 'username', 'id' => 'username', 'class' => 'form-login', 'maxlength' => '32', 'placeholder' => 'example@xyz.com', 'title' => 'Valid email id', 'value' => set_value('username'));
+                    echo form_input($userId);
+                    echo form_error('username', '<div class="error">', '</div>');
 					?>
 				</div>
 
@@ -36,16 +38,16 @@
 				</div>
 				<div id="login-box-field">
 					<?php
-					$password = array('name' => 'password', 'id' => 'password', 'type' => 'password', 'class' => 'form-login', 'value' => '', 'maxlength' => '32', 'title' => 'Password must be alpha number & six characters long');
-					echo form_input($password);
-					echo form_error('password', '<div class="error">', '</div>');
+                    $password = array('name' => 'password', 'id' => 'password', 'type' => 'password', 'class' => 'form-login', 'value' => '', 'maxlength' => '32', 'title' => 'Password must be alpha number & six characters long');
+                    echo form_input($password);
+                    echo form_error('password', '<div class="error">', '</div>');
 					?>
 				</div>
 
 				<div>
 					<?php
-					$button = array('class' => 'login-box-button', 'name' => 'login');
-					echo form_submit($button);
+                    $button = array('class' => 'login-box-button', 'name' => 'login');
+                    echo form_submit($button);
 					?>
 				</div>
 

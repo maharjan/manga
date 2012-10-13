@@ -46,18 +46,48 @@ input {
 	width: 80%;
 	background-color: #ccc;
 	border-radius: 5px;
-	-webkit-border-radius: 0px 0px 5px 5px;
-	moz-border-radius: 0px 0px 5px 5px;
+	-webkit-border-radius: 5px 5px 5px 5px;
+	-moz-border-radius: 5px 5px 5px 5px;
 	padding: 1em;
 }
 
-#innerMainContainer label {
+#inner_panel {
+	padding: 0;
+	margin: 0 5px;
+}
+
+#inner_panel h1 {
+	font-size: 16px;
+	font-weight: bold;
+	padding: 0 0 0 10px;
+	margin: 0 0 5px 0;
+	width: 100%;
+}
+
+#inner_panel p {
+	width: 90%;
+	margin: 0px;
+	padding: 0px 10px;
+}
+
+#inner_panel p input, label {
+	font: 12px verdana, sans-serif;
+	font-weight: normal;
+	height:13px;
+	width: 300px;
+}
+
+#inner_panel p input[type=submit]{
+	height:auto;
+}
+
+#inner_panel p label {
 	width: 300px;
 	display: block;
 	padding: 5px 0px;
 }
 
-#innerMainContainer input[type=text], input[type=password] {
+#inner_panel p  input[type=text], input[type=password] {
 	width: 300px;
 	padding: 5px 10px;
 	margin: 0px 0px 5px;
@@ -65,21 +95,22 @@ input {
 	border: 1px solid #aaa;
 	border-radius: 3px;
 	-webkit-border-radius: 3px;
-	moz-border-radius: 3px;
-	-webkit-box-shadow: inset 0px 0px 1px 0px;
-	box-shadow: inset 0px 0px 1px 0px;
+	-moz-border-radius: 3px;
+	-webkit-box-shadow: inset 1px 1px 0px 0px;
+	box-shadow: inset 1px 1px 0px 0px;
 	padding: 5px 10px;
 }
 
-#innerMainContainer input[type=text]:FOCUS, input[type=password]:FOCUS {
+#inner_panel p  input[type=text]:FOCUS, input[type=password]:FOCUS {
 	box-shadow: 0 0 5px #153E7E;
 	border: 1px solid #153E7E;
 	border-radius: 3px;
 	-webkit-border-radius: 3px;
-	moz-border-radius: 3px;
+	-moz-border-radius: 3px;
+	padding: 5px 10px;
 }
 
-#innerMainContainer textarea {
+#inner_panel p  textarea {
 	width: 350px;
 	height: 150px;
 	padding: 5px 10px;
@@ -88,21 +119,21 @@ input {
 	border: 1px solid #aaa;
 	border-radius: 3px;
 	-webkit-border-radius: 3px;
-	moz-border-radius: 3px;
+	-moz-border-radius: 3px;
 	-webkit-box-shadow: inset 0px 0px 1px 0px;
 	box-shadow: inset 0px 0px 1px 0px;
 	padding: 5px 10px;
 }
 
-#innerMainContainer textarea:FOCUS {
+#inner_panel p  textarea:FOCUS {
 	box-shadow: 0 0 5px #153E7E;
 	border: 1px solid #153E7E;
 	border-radius: 3px;
 	-webkit-border-radius: 3px;
-	moz-border-radius: 3px;
+	-moz-border-radius: 3px;
 }
 
-#innerMainContainer input[type=submit] {
+#inner_panel p  input[type=submit] {
 	color: #e3e3e3;
 	background: #153E7E;
 	margin: 5px 0px 0px;
@@ -113,10 +144,33 @@ input {
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	width: auto;
+	
 }
 
-#innerMainContainer input[type=submit]:hover {
+#inner_panel p  input[type=submit]:hover {
 	border: 1px solid #aaa;
+}
+
+#inner_panel .error {
+	width: 400px;
+	padding: 0px 10px;
+	font-size: 12px;
+	color: #C11B17;
+}
+
+#inner_panel p input[type=checkbox]{
+	-webkit-box-shadow: inset 3px 2px 2px 1px;
+	box-shadow: inset 3px 2px 2px 1px;
+}
+
+#inner_panel p input::-webkit-input-placeholder {
+	font-style: italic;
+	color: #777;
+}
+
+#inner_panel p input:-moz-placeholder {
+	font-style: italic;
+	color: #777;
 }
 
 #manga_list {

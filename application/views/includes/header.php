@@ -27,6 +27,11 @@
 					<div id="nav_extra">
 						<li>
 							<a href="<?php echo base_url()?>main/add"><strong>Add Manga</strong></a>
+							<!-- <ui>
+								<li>
+								    <a href="<?php echo base_url()?>main/add"><strong>Add Genre</strong></a>
+								</li>
+							</ui> -->
 						</li>
 						<li>
 							<a href="<?php echo base_url()?>main/edit"><strong>Edit Manga</strong></a>
