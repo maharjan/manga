@@ -44,6 +44,15 @@
 			?>
 		</p>
 		<p>
+			<?php
+            echo form_label("Manga start date :", 'manga_start_date');
+
+            $manga_start_date = array('name' => 'manga_start_date', 'id' => 'manga_start_date', 'type' => 'text', 'maxlength' => '255', 'placeholder' => '2000-01-20', 'value' => set_value('manga_start_date'), 'required' => 'required');
+            echo form_input($manga_start_date);
+            echo form_error('manga_start_date', '<div class="error">', '</div>');
+			?>
+		</p>
+		<p>
 			<?php echo form_submit('submit', 'Add'); ?>
 		</p>
 		<?php echo form_close(); ?>

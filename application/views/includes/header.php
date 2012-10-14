@@ -37,7 +37,7 @@
 							<a href="<?php echo base_url()?>main/edit"><strong>Edit Manga</strong></a>
 						</li>
 						<li class="last">
-							<a href="<?php echo base_url()?>setting/change"><strong>Change
+							<a href="<?php echo base_url()?>main/change"><strong>Change
 							Password</strong></a>
 						</li>
 						<li class="logout">

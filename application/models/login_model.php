@@ -4,6 +4,8 @@ class Login_model extends CI_Model {
 	function __construct() {
 		parent::__construct();
 		$this->load->helper('date');
+		$this->load->library('encrypt');
+		$this->encrypt->set_cipher(MCRYPT_RIJNDAEL_256);
 	}
 
 	function validate() {
