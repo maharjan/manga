@@ -13,7 +13,7 @@
 		<script type="text/javascript" src="<?php echo base_url()?>scripts/nav.js"></script>
 	</head>
 	<body class="back_color" onload="not_login('nav_extra','login', <?php echo $login; ?>)">
-		<div class="back_img">
+		<div>
 			<div id="headerPanel">
 				<div id="subHeaderPanel">
 					<a href="<?php echo base_url() ?>"><img

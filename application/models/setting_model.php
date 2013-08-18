@@ -22,7 +22,7 @@ class Setting_model extends CI_Model{
 	function change_old_password(){
 		$username = $this->session->userdata('username');
 		$this->db->where('username',$username);
-		$query = $this->db->get('user');
+		$query = $this->db->get('users');
 		$row = $query->row();
 		
 		// if user exists
@@ -35,7 +35,7 @@ class Setting_model extends CI_Model{
 					'last_modified'=> date('Y-m-d H:i:s'),
 					'version'=>($row->version+1));
 			$this->db->where('id',$row->id);
-			$result=$this->db->update('user',$data);
+			$result=$this->db->update('users',$data);
 			return $result;
 		}else{
 			// TODO : show custom message stating error

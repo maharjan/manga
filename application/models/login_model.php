@@ -10,7 +10,7 @@ class Login_model extends CI_Model {
 
 	function validate() {
 		$this -> db -> where('username', $this -> input -> post('username'));
-		$query = $this -> db -> get('user');
+		$query = $this -> db -> get('users');
 		if ($query -> num_rows == 1) {
 			$row = $query -> row();
 			if ($this -> input -> post('password') == $this -> encrypt -> decode($row -> password)) {

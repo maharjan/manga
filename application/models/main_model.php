@@ -7,7 +7,7 @@ class Main_model extends CI_Model {
 
 	function fetch_manga_lists() {
 		// find manga list
-		$query = $this -> db -> get('manga_name');
+		$query = $this -> db -> get('mangas');
 		$data=$query->result_array();
 		return $data;
 	}
