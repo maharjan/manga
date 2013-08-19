@@ -54,6 +54,9 @@ $autoload['packages'] = array();
 
 $autoload['libraries'] = array('database','session','form_validation');
 
+$this->load->dbforge();
+
+
 
 /*
 | -------------------------------------------------------------------
